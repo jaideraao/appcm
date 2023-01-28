@@ -1,0 +1,3 @@
+[submodule "commonmkcm"]
+	path = commonmkcm
+	url = git@github.com:jaideraao/commonmkcm.git
