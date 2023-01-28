@@ -3,7 +3,7 @@
         {
             "name": "ARM Cortex-M0+ Microchip",
             "includePath": [
-                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/src",
                 "${workspaceFolder}/device/**"
             ],
             "defines": [
@@ -19,9 +19,8 @@
                     "${workspaceFolder}/src",
                     "${workspaceFolder}/device"
                 ],
-                "limitSymbolsToIncludedHeaders": false
-            },
-            "configurationProvider": "ms-vscode.makefile-tools"
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4

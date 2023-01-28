@@ -7,7 +7,7 @@
 #
 
 -include config.mk
--include make/common.mk
+-include mkcm/common.mk
 
 ifneq "$(MAKECMDGOALS)" "clean"
 -include $(depends)
