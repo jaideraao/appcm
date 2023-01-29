@@ -1,13 +1,15 @@
 #
 #  Makefile
-#  App
+#  appcm
 #
-#  Copyright (C) 2017 Jaider Angarita.
+#  Copyright (C) 2023 Jaider Angarita.
 #  All rights reserved.
+#
+#  This file is part of the appcm project.
 #
 
 -include config.mk
--include mkcm/common.mk
+-include makecm/common.mk
 
 ifneq "$(MAKECMDGOALS)" "clean"
 -include $(depends)

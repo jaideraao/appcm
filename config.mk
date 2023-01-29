@@ -1,9 +1,11 @@
 #
 #  config.mk
-#  App
+#  appcm
 #
 #  Copyright (C) 2017 Jaider Angarita.
 #  All rights reserved.
+#
+#  This file is part of the appcm project.
 #
 
 target		:= __SAMD21G18A__

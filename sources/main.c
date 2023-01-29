@@ -1,9 +1,11 @@
 //
 // main.c
-// App
+// appcm
 //
-// Copyright (C) 2017 Jaider Angarita.
+// Copyright (C) 2023 Jaider Angarita.
 // All rights reserved.
+//
+// This file is part of the appcm project.
 //
 
 #define USE_CMSIS_INIT
