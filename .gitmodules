@@ -1,0 +1,3 @@
+[submodule "makecm"]
+	path = makecm
+	url = git@github.com:jaideraao/makecm.git
