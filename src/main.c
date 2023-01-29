@@ -16,6 +16,7 @@ int main(void)
 {
 	SystemInit();
 
+	/* Replace with your application code */
 	while (true)
 	{
 		__asm("nop");
