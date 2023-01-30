@@ -3,8 +3,9 @@
         {
             "name": "ARM Cortex-M0+ Microchip",
             "includePath": [
-                "${workspaceFolder}/src",
-                "${workspaceFolder}/device/**"
+                "${workspaceFolder}/sources",
+                "${workspaceFolder}/cmsis/core",
+                "${workspaceFolder}/samd21a/include/**"
             ],
             "defines": [
                 "__SAMD21G18A__",
@@ -16,8 +17,7 @@
             "intelliSenseMode": "macos-gcc-arm",
             "browse": {
                 "path": [
-                    "${workspaceFolder}/src",
-                    "${workspaceFolder}/device"
+                    "${workspaceFolder}"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }
