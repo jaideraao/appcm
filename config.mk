@@ -14,14 +14,14 @@ cdebug		:= g
 cstd		:= c17
 cxxstd		:= c++17
 
-srcdir		:= src \
-			device
+srcdir		:= sources \
+			samd21a
 
-incdirs		:= src \
-			device/cmsis \
-			device/include
+incdirs		:= sources \
+			cmsis/core \
+			samd21a/include
 
-ldscript	:= device/samd21g18a_flash.ld
+ldscript	:= samd21a/samd21g18a_flash.ld
 
 ldlibs		:= -lm
 
