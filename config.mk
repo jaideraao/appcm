@@ -15,13 +15,13 @@ cstd		:= c17
 cxxstd		:= c++17
 
 srcdir		:= sources \
-			samd21a
+			cmsis/samd21
 
 incdirs		:= sources \
 			cmsis/core \
-			samd21a/include
+			cmsis/samd21/include
 
-ldscript	:= samd21a/samd21g18a_flash.ld
+ldscript	:= cmsis/samd21/samd21g18a_flash.ld
 
 ldlibs		:= -lm
 
