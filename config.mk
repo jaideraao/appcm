@@ -19,6 +19,7 @@ srcdir		:= sources \
 
 incdirs		:= sources \
 			cmsis/core \
+			cmsis/samd21 \
 			cmsis/samd21/include
 
 ldscript	:= cmsis/samd21/samd21g18a_flash.ld
@@ -29,5 +30,5 @@ ldflags		:= -L
 
 # sources		:= $(notdir $(wildcard $(srcdir)/*.c))
 sources		:= main.c \
-			startup_samd21g18a.c \
-			system_samd21g18a.c
+			startup_samd21.c \
+			system_samd21.c

@@ -3,9 +3,7 @@
         {
             "name": "ARM Cortex-M0+ Microchip",
             "includePath": [
-                "${workspaceFolder}/sources",
-                "${workspaceFolder}/cmsis/core",
-                "${workspaceFolder}/samd21a/include/**"
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "__SAMD21G18A__",

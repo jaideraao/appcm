@@ -12,7 +12,7 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
-#include "sam.h"
+#include "samd21.h"
 
 int main(void)
 {
