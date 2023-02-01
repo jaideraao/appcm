@@ -12,7 +12,7 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
-#include "samd21.h"
+#include "sam.h"
 
 int main(void)
 {
@@ -20,9 +20,7 @@ int main(void)
 
 	SystemInit();
 
-	// REG_PORT_DIR0 = PORT_PA17;
-	PORT->Group[0].DIRSET.bit.DIRSET = PORT_PA17;
-	PORT->Group[0].PINCFG[17UL].bit.DRVSTR = 1;
+	PORT_REGS->GROUP[0].PORT_DIRSET = PORT_PA17;
 
 	SysTick->CTRL = 0;
 	SysTick->LOAD = 1000000UL;
@@ -35,7 +33,6 @@ int main(void)
 	__enable_irq();
 
 	/* Replace with your application code */
-
 	while (true)
 	{
 		__NOP();
@@ -46,5 +43,5 @@ int main(void)
 
 void SysTick_Handler(void)
 {
-	PORT->Group[0].OUTTGL.bit.OUTTGL = PORT_PA17;
+	PORT_REGS->GROUP[0].PORT_OUTTGL = PORT_PA17;
 }
