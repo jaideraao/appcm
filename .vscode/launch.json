@@ -8,51 +8,19 @@
             "cwd": "${workspaceFolder}",
             "MIMode": "gdb",
             "targetArchitecture": "arm",
-            "logging": {
-                "engineLogging": true
-            },
-            "program": "${workspaceFolder}/bin/apparm.elf",
-            "miDebuggerPath": "arm-none-eabi-gdb",
-            "customLaunchSetupCommands": [
-                {
-                    "text": "cd ${workspaceFolder}/bin"
-                },
-                {
-                    "text": "target extended-remote /dev/cu.usbmodem7BAE9BAB1"
-                },
-                {
-                    "text": "monitor tpwr enable"
-                },
-                {
-                    "text": "monitor swdp_scan"
-                },
-                {
-                    "text": "attach 1"
-                },
-                {
-                    "text": "file apparm.elf"
-                },
-                {
-                    "text": "load"
-                },
-                {
-                    "text": "cd ${workspaceFolder}"
-                },
-                {
-                    "text": "set mem inaccessible-by-default off"
-                },
-                {
-                    // "text": "break main"
-                    "text": "start"
-                }
-            ],
-            // "stopAtEntry": true,
-            // "sourceFileMap": {
-            //     "<source-path>": "${workspaceFolder}/bin/apparm.map"
+            // "logging": {
+            //     "engineLogging": true
             // },
+            "program": "${workspaceFolder}/bin/app.elf",
+            "miDebuggerPath": "arm-none-eabi-gdb",
+            "customLaunchSetupCommands": [],
+            // "stopAtEntry": true,
+            "sourceFileMap": {
+                "<source-path>": "${workspaceFolder}/bin/app.map"
+            },
             "useExtendedRemote": true,
-            "svdPath": "${workspaceFolder}../Workspace/Microchip.SAMD21_DFP.3.6.144/samd21a/svd/ATSAMD21G18A.svd",
-            "serverLaunchTimeout": 10000,
+            "svdPath": "${workspaceFolder}/cmsis/samd21/ATSAMD21G18A.svd",
+            "serverLaunchTimeout": 10000
         }
     ]
 }

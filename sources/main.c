@@ -45,3 +45,4 @@ void SysTick_Handler(void)
 {
 	PORT_REGS->GROUP[0].PORT_OUTTGL = PORT_PA17;
 }
+
