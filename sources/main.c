@@ -16,32 +16,32 @@
 
 int main(void)
 {
-	__disable_irq();
+    __disable_irq();
 
-	SystemInit();
+    SystemInit();
 
-	PORT_REGS->GROUP[0].PORT_DIRSET = PORT_PA17;
+    PORT_REGS->GROUP[0].PORT_DIRSET = PORT_PA17;
 
-	SysTick->CTRL = 0;
-	SysTick->LOAD = 1000000UL;
-	SysTick->VAL = 0;
-	SysTick->CTRL = 0x00000007;
+    SysTick->CTRL = 0;
+    SysTick->LOAD = 1000000UL;
+    SysTick->VAL = 0;
+    SysTick->CTRL = 0x00000007;
 
-	NVIC_SetPriority(SysTick_IRQn, 3);
-	NVIC_EnableIRQ(SysTick_IRQn);
+    NVIC_SetPriority(SysTick_IRQn, 3);
+    NVIC_EnableIRQ(SysTick_IRQn);
 
-	__enable_irq();
+    __enable_irq();
 
-	/* Replace with your application code */
-	while (true)
-	{
-		__NOP();
-	}
+    /* Replace with your application code */
+    while (true)
+    {
+        __NOP();
+    }
 
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 
 void SysTick_Handler(void)
 {
-	PORT_REGS->GROUP[0].PORT_OUTTGL = PORT_PA17;
+    PORT_REGS->GROUP[0].PORT_OUTTGL = PORT_PA17;
 }
