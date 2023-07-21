@@ -12,5 +12,5 @@
 -include makecm/common.mk
 
 ifneq "$(MAKECMDGOALS)" "clean"
--include $(depends)
+	-include $(depends)
 endif
