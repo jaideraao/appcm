@@ -1,14 +1,12 @@
 ---
-# We'll use defaults from the LLVM style, but with 4 columns indentation.
-# BasedOnStyle: LLVM
+# AllowShortIfStatementsOnASingleLine: false
 BreakBeforeBraces: Allman
 ColumnLimit: 0
+# IndentCaseLabels: false
 IndentWidth: 4
 SortIncludes: Never
 UseTab: Never
-# AllowShortIfStatementsOnASingleLine: false
-# IndentCaseLabels: false
-# ---
+---
 Language: Cpp
 # Force pointers to the type for C++.
 DerivePointerAlignment: false
