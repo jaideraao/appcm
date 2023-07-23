@@ -10,8 +10,8 @@
 
 #define USE_CMSIS_INIT
 
-#include <stdlib.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include "sam.h"
 
 int main(void)
