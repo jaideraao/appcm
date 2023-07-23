@@ -1,4 +1,5 @@
--D__SAMD21G18A__
 -Isources
 -Icmsis/core
 -Icmsis/samd21/include
+--target=macos-gcc-arm
+-D__SAMD21G18A__
