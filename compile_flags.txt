@@ -1,0 +1,4 @@
+-D__SAMD21G18A__
+-Isources
+-Icmsis/core
+-Icmsis/samd21/include
