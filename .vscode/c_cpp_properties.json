@@ -17,8 +17,17 @@
                 "path": [
                     "${workspaceFolder}"
                 ],
-                "limitSymbolsToIncludedHeaders": true
-            }
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "compilerArgs": [
+                "-mcpu=cortex-m0plus",
+                "-mfloat-abi=soft",
+                "-mthumb",
+                "-ffreestanding",
+                "-Wall",
+                "-Wextra",
+                "-Werror"
+            ]
         }
     ],
     "version": 4
