@@ -1,0 +1,15 @@
+-nostdlibinc
+-std=c17
+-isystem/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include
+-isystem/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/include-fixed
+-isystem/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/include
+-Isources
+-Icmsis/core
+-Icmsis/samd21/include
+--target=armv6m-none-eabi
+-mcpu=cortex-m0plus
+-mfloat-abi=soft
+-mfpu=none
+-D__SAMD21G18A__
+-DUSE_CMSIS_INIT
+-ffreestanding
