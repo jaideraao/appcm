@@ -8,8 +8,6 @@
 // This file is part of the appcm project.
 //
 
-#define USE_CMSIS_INIT
-
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
