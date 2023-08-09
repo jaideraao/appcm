@@ -28,7 +28,4 @@ ldlibs		:= -lm
 
 ldflags		:= -L
 
-# sources		:= $(notdir $(wildcard $(srcdir)/*.c))
-sources		:= main.c \
-			   startup_samd21g18a.c \
-			   system_samd21g18a.c
+sources		:= $(notdir $(foreach dir,$(srcdir),$(wildcard $(dir)/*.c)))
