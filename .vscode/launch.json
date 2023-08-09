@@ -5,13 +5,12 @@
             "name": "Cortex Debug",
             "cwd": "${workspaceFolder}",
             "executable": "./bin/app.elf",
-            "request": "attach",
+            "request": "launch",
             "type": "cortex-debug",
             "runToEntryPoint": "main",
             "servertype": "bmp",
             "interface": "swd",
             "BMPGDBSerialPort": "/dev/cu.usbmodem7BAE9BAB1",
-            "svdPath": "cmsis/samd21/ATSAMD21G18A.svd",
             "svdFile": "cmsis/samd21/ATSAMD21G18A.svd"
         }
     ]
