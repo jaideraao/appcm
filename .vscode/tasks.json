@@ -6,7 +6,7 @@
             "label": "make all",
             "command": "make",
             "args": [
-				"all",
+                "all"
             ],
             "problemMatcher": "$gcc",
             "group": {
