@@ -2,16 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Cortex Debug",
-            "cwd": "${workspaceFolder}",
-            "executable": "./bin/app.elf",
+            "name": "Embedded Debug",
+            "type": "embedded-debug",
             "request": "launch",
-            "type": "cortex-debug",
-            "runToEntryPoint": "main",
-            "servertype": "bmp",
-            "interface": "swd",
-            "BMPGDBSerialPort": "/dev/cu.usbmodem7BAE9BAB1",
-            "svdFile": "cmsis/samd21/ATSAMD21G18A.svd"
+            "serialNumber": "${command:device-manager.getSerialNumber}",
+            "program": "${command:embedded-debug.getApplicationFile}",
+            "cmsisPack": "${command:device-manager.getDevicePack}",
+            "debugFrom": "main",
+            "deviceName": "ATSAMD21G18A",
+            "svd": "cmsis/samd21/ATSAMD21G18A.svd",
+            "pdsc": "cmsis/samd21/ARM.CMSIS.pdsc",
+            "verifyApplication": true
         }
     ]
 }
