@@ -4,10 +4,10 @@ BreakBeforeBraces: Allman
 ColumnLimit: 0
 # IndentCaseLabels: false
 IndentWidth: 4
-SortIncludes: Never
+# SortIncludes: Never
 UseTab: Never
----
-Language: Cpp
+# ---
+# Language: Cpp
 # Force pointers to the type for C++.
-DerivePointerAlignment: false
-PointerAlignment: Left
+# DerivePointerAlignment: false
+# PointerAlignment: Left

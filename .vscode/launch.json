@@ -2,6 +2,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/bin/app.elf",
+            "gdbpath": "arm-none-eabi-gdb",
+            "name": "Debug Microcontroller",
+            "request": "attach",
+            "stopAtConnect": true,
+            "stopAtEntry": true,
+            "target": "extended-remote /dev/cu.usbmodem7BAE9BAB1",
+            "type": "gdb",
+            "valuesFormatting": "prettyPrinters",
+            "autorun": [
+                "monitor tpwr enable",
+                "monitor swdp_scan",
+                "attach 1",
+                "file ./bin/app.elf",
+                "load",
+                "start"
+            ]
+        },
+        {
             "name": "Embedded Debug",
             "type": "embedded-debug",
             "request": "launch",
@@ -9,10 +29,7 @@
             "program": "${command:embedded-debug.getApplicationFile}",
             "cmsisPack": "${command:device-manager.getDevicePack}",
             "debugFrom": "main",
-            "deviceName": "ATSAMD21G18A",
-            "svd": "cmsis/samd21/ATSAMD21G18A.svd",
-            "pdsc": "cmsis/samd21/ARM.CMSIS.pdsc",
-            "verifyApplication": true
+            "pdsc": "${workspaceFolder}/cmsis/samd21/Microchip.SAMD21_DFP.3.6.144.pdsc"
         }
     ]
 }

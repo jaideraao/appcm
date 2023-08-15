@@ -10,6 +10,7 @@
 
 target		:= __SAMD21G18A__
 mcpu		:= cortex-m0plus
+mfloat		:= soft
 defines		:= USE_CMSIS_INIT
 cdebug		:= g
 cstd		:= c17
