@@ -1,0 +1,17 @@
+[
+    {
+        "command": "arm-none-eabi-gcc -std=c17 -pipe -Wall -Wextra -Werror -mthumb -mcpu=cortex-m0plus -mfloat-abi=soft -D__SAMD21G18A__ -DUSE_CMSIS_INIT -Isources -Icmsis/core -Icmsis/samd21/include -Og -ffunction-sections -fdata-sections -ffreestanding  -g3 -DDEBUG -c sources/main.c -o build/main.o",
+        "directory": "/Users/jaideraao/Workspace/appcm",
+        "file": "/Users/jaideraao/Workspace/appcm/sources/main.c"
+    },
+    {
+        "command": "arm-none-eabi-gcc -std=c17 -pipe -Wall -Wextra -Werror -mthumb -mcpu=cortex-m0plus -mfloat-abi=soft -D__SAMD21G18A__ -DUSE_CMSIS_INIT -Isources -Icmsis/core -Icmsis/samd21/include -Og -ffunction-sections -fdata-sections -ffreestanding  -g3 -DDEBUG -c cmsis/samd21/startup_samd21g18a.c -o build/startup_samd21g18a.o",
+        "directory": "/Users/jaideraao/Workspace/appcm",
+        "file": "/Users/jaideraao/Workspace/appcm/cmsis/samd21/startup_samd21g18a.c"
+    },
+    {
+        "command": "arm-none-eabi-gcc -std=c17 -pipe -Wall -Wextra -Werror -mthumb -mcpu=cortex-m0plus -mfloat-abi=soft -D__SAMD21G18A__ -DUSE_CMSIS_INIT -Isources -Icmsis/core -Icmsis/samd21/include -Og -ffunction-sections -fdata-sections -ffreestanding  -g3 -DDEBUG -c cmsis/samd21/system_samd21g18a.c -o build/system_samd21g18a.o",
+        "directory": "/Users/jaideraao/Workspace/appcm",
+        "file": "/Users/jaideraao/Workspace/appcm/cmsis/samd21/system_samd21g18a.c"
+    }
+]
