@@ -53,6 +53,5 @@ dkms.conf
 
 # Others
 .DS_Store
-.cache
 bin
 build
