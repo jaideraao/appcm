@@ -9,7 +9,7 @@
                 "__SAMD21G18A__",
                 "USE_CMSIS_INIT"
             ],
-            "compilerPath": "~/.local/bin/arm-none-eabi-gcc",
+            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "macos-gcc-arm",
