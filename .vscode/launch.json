@@ -16,20 +16,9 @@
                 "monitor tpwr enable",
                 "monitor swdp_scan",
                 "attach 1",
-                "file ./bin/app.elf",
-                "load",
+                "load ./bin/app.elf",
                 "start"
             ]
-        },
-        {
-            "name": "Embedded Debug",
-            "type": "embedded-debug",
-            "request": "launch",
-            "serialNumber": "${command:device-manager.getSerialNumber}",
-            "program": "${command:embedded-debug.getApplicationFile}",
-            "cmsisPack": "${command:device-manager.getDevicePack}",
-            "debugFrom": "main",
-            "pdsc": "${workspaceFolder}/cmsis/samd21/Microchip.SAMD21_DFP.3.6.144.pdsc"
         }
     ]
 }
