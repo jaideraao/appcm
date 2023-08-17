@@ -13,7 +13,6 @@
             "type": "gdb",
             "valuesFormatting": "prettyPrinters",
             "autorun": [
-                "monitor tpwr enable",
                 "monitor swdp_scan",
                 "attach 1",
                 "load ./bin/app.elf",
