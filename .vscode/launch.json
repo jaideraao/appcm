@@ -13,7 +13,7 @@
             "type": "gdb",
             "valuesFormatting": "prettyPrinters",
             "autorun": [
-                "monitor swdp_scan",
+                "monitor swd_scan",
                 "attach 1",
                 "load ./bin/app.elf",
                 "start"
