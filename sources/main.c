@@ -8,10 +8,10 @@
 // This file is part of the appcm project.
 //
 
-#include "sam.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "sam.h"
 
 int main(void)
 {
