@@ -16,7 +16,7 @@ cdebug		:= g
 cstd		:= c17
 cxxstd		:= c++17
 
-srcdir		:= sources \
+srcdirs		:= sources \
 			   cmsis/samd21
 
 incdirs		:= sources \
@@ -29,4 +29,13 @@ ldlibs		:= -lm
 
 ldflags		:= -L
 
-sources		:= $(notdir $(foreach dir,$(srcdir),$(wildcard $(dir)/*.c)))
+sources		:= $(notdir $(foreach dir,$(srcdirs),$(wildcard $(dir)/*.c)))
+
+app			?= app
+bindir		?= bin/
+build		?= build/
+
+elf			:= $(bindir)$(app).elf
+map			:= $(bindir)$(app).map
+
+outdirs		:= $(bindir) $(build)
