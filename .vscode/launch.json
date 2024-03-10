@@ -2,27 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "gdb",
-            "request": "attach",
-            "name": "Debug",
-            "target": "extended-remote /dev/cu.usbmodem00000000",
-            "executable": "./bin/executable.elf",
-            "cwd": "${workspaceRoot}",
-            "autorun": [
-                "monitor tpwr enable",
-                "monitor swdp_scan",
-                "attach 1",
-                "load ./bin/executable.elf"
-            ]
-        },
-        {
-            "name": "Debug Microcontroller",
+            "name": "Black Magic Probe",
             "type": "gdb",
             "request": "attach",
             "gdbpath": "arm-none-eabi-gdb",
             "cwd": "${workspaceFolder}",
             "target": "extended-remote /dev/cu.usbmodem7BAE9BAB1",
-            "valuesFormatting": "prettyPrinters",
             "stopAtConnect": true,
             "autorun": [
                 "file ./bin/app.elf",
