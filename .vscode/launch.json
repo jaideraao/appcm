@@ -15,7 +15,7 @@
                 "attach 1",
                 "load",
                 "compare-sections",
-                "start"
+                "start",
             ]
         }
     ]
