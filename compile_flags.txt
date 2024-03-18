@@ -1,0 +1,12 @@
+-isystem/usr/local/bin/../lib/gcc/arm-none-eabi/13.2.1/include
+-isystem/usr/local/bin/../lib/gcc/arm-none-eabi/13.2.1/include-fixed
+-isystem/usr/local/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/include
+--target=arm-none-eabi
+-mthumb
+-mcpu=cortex-m0plus
+-mfloat-abi=soft
+-D__SAMD21G18A__
+-DUSE_CMSIS_INIT
+-Isources
+-Icmsis/core
+-Icmsis/samd21/include
