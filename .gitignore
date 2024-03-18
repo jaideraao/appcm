@@ -53,6 +53,7 @@ dkms.conf
 
 # Others
 .DS_Store
+.gdb_history
+.cache
 bin
 build
-.gdb_history
