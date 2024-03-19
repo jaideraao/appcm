@@ -9,6 +9,7 @@
             "cwd": "${workspaceFolder}",
             "target": "extended-remote /dev/cu.usbmodem7BAE9BAB1",
             "stopAtConnect": true,
+            "valuesFormatting": "prettyPrinters",
             "autorun": [
                 "file ./bin/app.elf",
                 "monitor swd_scan",

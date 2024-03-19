@@ -31,7 +31,6 @@ int main(void)
 
     __enable_irq();
 
-    /* Replace with your application code */
     while (true)
     {
         __NOP();
